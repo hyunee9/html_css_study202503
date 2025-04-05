@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul > .orange {
+            color: orange;
+        }
+
+        /* 자식 선택자는 직속 자식을 지목할 때 사용.
+            단계를 건너뛸 수 없다. */
+        div > ul > li {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>하이</h1>
+    <div>
+        <ul>
+            <li class="red-color">사과</li>
+            <li class="orange">오렌지</li>
+            <li class="red-color">딸기</li>
+        </ul>
+    </div>
+    <br>
+    <div>당근</div>
+    <p class="red-color">토마토</p>
+    <!-- id는 중복하면 안됨! 그럴거면 class 쓰자. -->
+    <span class="orange">오렌지</span>
+</body>
+</html>
