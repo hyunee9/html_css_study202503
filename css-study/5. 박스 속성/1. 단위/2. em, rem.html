@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*html의 기본 폰트사이즈도 변경할 수 있다. */
+        html {
+            font-size: 10px;
+        }
+        div {
+            border: 2px solid black;
+        }
+        .root {
+            font-size: 20px;
+            width: 60em; /*em으로 작성할 때는 보통 폰트 사이즈를 같이 작성 */
+            /*em : 자기가 가지고 있는 폰트 사이즈의 배수. -> 20px의 60배배*/
+        }
+        .parent {
+            width: 50%; /*1200의 50% -> 60*/
+            font-size: 2em; /* 부모로부터 상속 받은 폰트 사이즈 20X2 = 40 */
+        }
+        .child {
+            width: 30%;
+            font-size: 3rem; /*rem : html의 폰트 사이즈(16px)를 따라간다. 16*3= 48 */
+                    }
+    </style>
+</head>
+<body>
+    <div class="root">
+        ROOT
+        <div class="parent">
+            PARENT
+            <div class="child">CHILD1</div>
+            <div class="child">CHILD2</div>
+        </div>
+    </div>
+</body>
+</html>
